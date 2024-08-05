@@ -5,7 +5,7 @@ import MenuMobile from './MenuMobile'
 import closeIcon from '../images/icon-close.svg'
 
 const Header = () => {
-  const [showMenu, setShowMenu] = useState(true)
+  const [showMenu, setShowMenu] = useState(false)
 
   const handleShowMenu = () => {
     setShowMenu(true)
@@ -35,7 +35,7 @@ const Header = () => {
           onClick={handleShowMenu}
         />
       </div>
-      <div className={showMenu ? 'close' : 'hide'}>
+      <div className={showMenu ? 'close_container' : 'hide'}>
         <img
           src={closeIcon}
           alt='close icon'
